@@ -1,0 +1,27 @@
+.main-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .3rem;
+    justify-content: flex-end; 
+    column-gap: 1.3rem; 
+}
+
+.btn {
+    background-color: rgb(28, 126, 219);
+    color: white;
+    border-radius: .3rem;
+    border: none;
+    padding: 0.6rem 1.7rem;
+    align-self: start;
+}
+.signin{
+    font-size: medium;
+
+}
+a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+}
