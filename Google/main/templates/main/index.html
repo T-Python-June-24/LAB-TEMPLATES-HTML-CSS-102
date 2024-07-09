@@ -1,2 +1,44 @@
 {% extends 'main/base.html' %}
+{% block content %}
+
+<section class="middle-view">
+    <div class="logo">
+        <img src="/static/images/google-logo.png" alt="Google Logo">
+    </div>
+    <div class="search-container">
+        <div class="search-box">
+            <span class="material-symbols-outlined">search</span>
+            <div class="right-nav">
+                                         
+                <img src="/static/images/mircophone.png" alt="" class="search-icon">
+                <img src="/static/images/camera.png" alt="" class="search-icon">
+            </div>
+        </div>
+        <div class="button-container">          
+            <button class="button-1">Google Search</button>
+            <button class="button-1">I'm Feeling Lucky</button>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block footer %}
+<div class="upper-footer">
+    <a href="#">Saudi Arabia</a>
+</div>
+<div class="footer-content">
+    <div class="footer-links">
+        <a href="#">About</a>
+        <a href="#">Advertising</a>
+        <a href="#">Business</a>
+        <a href="#">How Search Works</a>
+    </div>
+    <nav class="right-footer">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Settings</a>
+    </nav>
+</div>
+
+{% endblock %}
 

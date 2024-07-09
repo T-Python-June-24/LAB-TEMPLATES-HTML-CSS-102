@@ -11,48 +11,23 @@
 </head>
 <body>
     <div class="wrapper">
-        <div>
-            <div class="main-header">
-                <a href="">Gmail</a>
-                <a href="">Images</a>
-                <span class="material-symbols-outlined">apps</span>
-                <button class="btn">Sign in</button>
-            </div>
-            <main>
-                <section class="middle-view">
-                    <div class="logo">
-                        <img src="/static/images/google-logo.png" alt="">
-                    </div>
-                    <div class="search-container">
-                        <div class="search-box">
-                            <span class="material-symbols-outlined">search</span>
-                            <div class="right-nav">
-                                <img src="/static/images/mircophone.png" alt="" class="search-icon">
-                                <img src="/static/images/camera.png" alt="" class="search-icon">
-                            </div>
-                        </div>
-                        <div class="button-container">          
-                            <button class="button-1">Google Search</button>
-                            <button class="button-1">I'm Feeling Lucky</button>
-                        </div>
-                    </section>
-                </main>
-            </div>
-            <footer class="footer">
-                <div class="footer-content">
-                    <div class="footer-links">
-                        <a href="#">About</a>
-                        <a href="#">Advertising</a>
-                        <a href="#">Business</a>
-                        <a href="#">How Search Works</a>
-                    </div>
-                    <nav class="right-footer">
-                        <a href="#">Privacy</a>
-                        <a href="#">Terms</a>
-                        <a href="#">Settings</a>
-                    </nav>
-                </div>
-            </footer>
+        <div class="main-header">
+            <a href="#">Gmail</a>
+            <a href="#">Images</a>
+            <span class="material-symbols-outlined">apps</span>
+            <button class="btn">Sign in</button>
         </div>
-    </body>
+        <main>
+            {% block content %}
+
+            {% endblock %}
+
+        </main>
+        <footer class="footer">
+            {% block footer %}
+
+            {% endblock %}
+        </footer>
+    </div>
+</body>
 </html>
