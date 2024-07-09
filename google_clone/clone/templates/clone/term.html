@@ -1,12 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href='/static/css/term.css'>
-    <title>term</title>
-</head>
-<body>
-    <h1>hhhh</h1>
-</body>
-</html>
+{% extends "clone/base.html" %}
+
+{% load static %}
+{% block content %}
+<main>
+    <div class="hero">
+        <img src="{% static 'images/tos_main_illustration.svg' %}" alt="Terms Illustration" class="hero-image">
+    </div>
+    <div class="content">
+        <h1 style="font-size: bold; font-weight: 900">Google Terms of Service</h1>
+        <p>Effective 5 January 2022 | <a href="#" style="color: blue">Archived versions</a> | <a href="#" style="color: blue">Download PDF</a></p>
+        <a style="text-decoration: none; font-size: medium; color: blue">Country version: <strong style="font-size: medium; font-weight: 200">Saudi Arabia</strong></a><br>
+        <br>
+        <h2 style="font-weight: 500;">What's covered in these terms</h2>
+        <br>
+        <strong style="font-size: 15px; font-weight: 900">We know it’s tempting to skip these Terms of Service, but it’s important to establish what you can expect from us as you use Google <a style="text-decoration: none; font-size: medium; color: blue">services</a>, and what we expect from you.</strong>
+        <br>
+        <br>
+        <p style="font-size: 10px; font-weight: 200">These Terms of Service reflect the <a href="#" style="font-size: 10px; color: blue">way that Google’s business works</a>, the laws that apply to our company, and <a href="#" style="font-size: 10px; color: blue">certain things that we’ve always believed to be true</a>. As a result, these Terms of Service help define Google’s relationship with you as you interact with our services. For example, these terms include the following topic headings:</p>
+    </div>
+</main>
+{% endblock %}

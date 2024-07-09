@@ -1,0 +1,27 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+    <title>{% block title %}Abdullah Google{% endblock %}</title>
+</head>
+<body>
+<div class="wrapper">
+    <nav class="nav">
+        <a href="#">Gmail</a>
+        <a href="#">Images</a>
+        <img src="{% static 'images/apps.png' %}" alt="Apps" class="image">          
+        <button class="button">Sign In</button>
+    </nav>
+
+    {% block content %}
+
+    {% endblock %}
+</div>
+</body>
+</html>

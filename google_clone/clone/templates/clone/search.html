@@ -1,64 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href='/static/css/search.css'>
-    <title>Google Clone</title>
-</head>
-<body>
-<div class="wrapper">
-    <nav class="nav">
-        <a> Gmail </a>
-        <a> Images </a>
-        <img src="/static/images/apps.png" alt="Apps" class="image">          
-        <button class="button">Sign In</button>
-    </nav>
+ {% extends "clone/base.html" %}
 
-    <div class="search-container">
-        <div class="logo">
-            <img class="googleimage" alt="Google" src="/static/images/google-logo.png">
-        </div>
-        <div class="bar">
-            <img class="icon search" src="/static/images/search.png">
-            <input class="searchbar" type="text" title="Search">
-            <img class="icon camera" src="static/images/camera.png" title="Search by camera">
-            <img class="icon microphone" src="static/images/mircophone.png" title="Search by Voice">
+{% load static %}
+{% block content %}
+
+<div class="search-container">
+    <div class="logo">
+        <img class="googleimage" alt="Google" src="{% static 'images/google-logo.png' %}">
     </div>
-        <div class="buttons">
-            <button class="buttongoogle" type="button">Google Search</button>
-            <button class="buttongoogle" type="button">I'm Feeling Lucky</button>
+    <div class="bar">
+        <img class="icon search" src="{% static 'images/search.png' %}" alt="Search Icon">
+        <input class="searchbar" type="text" title="Search">
+        <img class="icon microphone" src="{% static 'images/mircophone.png' %}" title="Search by Voice" alt="Microphone Icon">
+        <img class="icon camera" src="{% static 'images/camera.png' %}" title="Search by camera" alt="Camera Icon">
+
     </div>
-        <p>Google offered in: <span style="color: blue;">العربية</span></p>
+    <div class="buttons">
+        <button class="buttongoogle" type="button">Google Search</button>
+        <button class="buttongoogle" type="button">I'm Feeling Lucky</button>
     </div>
+    <p>Google offered in:  <span style="color: #3c1dd3; font-size:small"> العربية</span></p>
+</div>
+
 <div class="section1">
-
     <section>
         <div>
-                <div>
-                    <a>saudi arabia</a>
-                </div>
+            <div>
+                <p href="#" style="font-size: medium; padding-bottom: 8px; margin: 8px;">Saudi Arabia</p>
+            </div>
         </div>
     </section>
-    <hr color="#c5c5c5" >
+    <hr color="#c5c5c5">
     <section>
         <div class="footer">
-            <div class="footer-right">
-                <a>About</a>
-                <a>Advertising</a>
-                <a>Business</a>
-                <a>How Search Works</a>
+            <div class="footer-right" >
+                <a href="#"style="font-size: medium;">About</a>
+                <a href="#"style="font-size: medium;">Advertising</a>
+                <a href="#"style="font-size: medium;">Business</a>
+                <a href="#"style="font-size: medium;">How Search Works</a>
             </div>
             <div class="footer-left">
-                <a>Privacy</a>
-                <a>Terms</a>
-                <a>Settings</a>
+                <a href="#"style="font-size: medium;" >Privacy</a>
+                <a href="#"style="font-size: medium;" >Terms</a>
+                <a href="#"style="font-size: medium;" >Settings</a>
             </div>
         </div>
     </section>
-    </div>
-
 </div>
-        
-</body>
-</html>
+{% endblock %}
