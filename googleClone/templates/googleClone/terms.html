@@ -1,0 +1,57 @@
+{% extends 'googleClone/base.html' %} {% load static %} {% block content %}
+<div class="container mx-auto px-4">
+  <div class="flex flex-col items-center">
+    <img
+      src="{% static 'images/illustration.svg' %}"
+      alt="terms"
+      class="w-1/2 mb-8"
+    />
+    <div class="w-full max-w-4xl">
+      <h1 class="text-4xl font-bold text-left">Google Terms of Service</h1>
+
+      <p class="text-sm text-gray-600 mt-6 mb-2">
+        Effective January 5, 2022 |
+        <span
+          class="text-blue-800 cursor-pointer hover:text-blue-900 hover:underline"
+          >Archived versions</span
+        >
+        |
+        <span
+          class="text-blue-800 cursor-pointer hover:text-blue-900 hover:underline"
+          >Download PDF</span
+        >
+      </p>
+
+      <span
+        class="text-blue-800 cursor-pointer hover:text-blue-900 hover:underline mb-4"
+      >
+        Country Version:</span
+      >
+      <span> Saudi Arabia </span>
+
+      <h1 class="text-2xl font-bold mt-6 mb-2">What's covered in this terms</h1>
+      <p class="text-sm text-gray-600 mt-4 mb-2 font-bold">
+        We know it's tempting to skip these Terms of Service, but it's important
+        to establish what you can expect from us as you use Google
+        <span
+          class="text-blue-800 cursor-pointer hover:text-blue-900 hover:underline"
+          >services</span
+        >, and what we expect from you.
+      </p>
+      <p class="my-4 text-xs">
+        These Terms of Service reflect
+        <a
+          class="text-blue-600 hover:underline"
+          >the way that Google's business works</a
+        >, the laws that apply to our company, and
+        <a
+          class="text-blue-600  hover:underline"
+          >certain things that we've always believed to be true</a
+        >. As a result, these Terms of Service help define Google's relationship
+        with you as you interact with our services. For example, these terms
+        include the following topic headings:
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,52 @@
+{% load static %}
+
+<div class="flex items-center mb-4">
+  <img src="{% static 'images/google-logo.png' %}" alt="Google" class="w-72" />
+</div>
+<div class="relative mb-4">
+  <div class="flex justify-center">
+    <input
+      type="text"
+      class="w-full sm:w-[584px] h-[46px] rounded-full border border-gray-200 hover:shadow-md focus:shadow-md pl-12 pr-16 focus:outline-none mt-4 focus:ring-0 focus:border-gray-200"
+    />
+    <div class="absolute inset-y-0 left-0 flex items-center pl-4">
+      <img
+        src="{% static 'images/search1.png' %}"
+        alt="Search"
+        class="w-6 h-6 mt-4"
+      />
+    </div>
+    <div class="absolute inset-y-0 right-0 flex items-center pr-4 space-x-2">
+      <img
+        src="{% static 'images/microphone.png' %}"
+        alt="Microphone"
+        class="w-8 h-8 mt-4"
+      />
+      <img
+        src="{% static 'images/camera.png' %}"
+        alt="Camera"
+        class="w-8 h-8 mt-4"
+      />
+    </div>
+  </div>
+</div>
+
+<div class="flex justify-center mt-8 space-x-4">
+  <button
+    class="bg-[#f8f9fa] text-[#3c4043] px-4 py-2 text-sm rounded hover:border hover:border-gray-300 hover:shadow-sm focus:outline-none"
+  >
+    Google Search
+  </button>
+  <button
+    class="bg-[#f8f9fa] text-[#3c4043] px-4 py-2 text-sm rounded hover:border hover:border-gray-300 hover:shadow-sm focus:outline-none"
+  >
+    I'm Feeling Lucky
+  </button>
+</div>
+
+<div class="flex justify-center mt-8 text-sm">
+  <p>
+    Google offered in:
+    <a href="#" class="text-blue-800 hover:underline">العربية</a>
+  </p>
+</div>
