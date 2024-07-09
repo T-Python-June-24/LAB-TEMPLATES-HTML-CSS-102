@@ -5,5 +5,7 @@ from django.http import HttpRequest
 
 def google(HttpRequest:HttpRequest):
     
-    return render(HttpRequest , 'page_google/index.html')
-    
+    return render(HttpRequest , 'page_google/Home_page.html')
+
+def Terms_of_Service_Page(HttpRequest:HttpRequest):
+    return render(HttpRequest , 'page_google/Terms_of_Service_Page.html')

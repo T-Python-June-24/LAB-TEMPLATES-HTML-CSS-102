@@ -1,0 +1,13 @@
+.box {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.box img {
+    height: 40rem;
+}
+.footer-service {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}

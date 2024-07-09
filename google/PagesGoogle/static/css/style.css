@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: arial,sans-serif;  
 }
+a{
+    text-decoration: none;
+}
 section{
     position: relative;
     width: 100%;
@@ -57,7 +60,7 @@ img.logo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
+    justify-content: center;
 }
 .Box-search{
     position: relative;
@@ -66,14 +69,15 @@ img.logo {
 
 }
 .input_search{
-    border-radius: 25px;
-    padding: 10px;
+    border-radius: 30px;
+    padding: 13px;
     padding-right: 60px;
     padding-left: 45px;
     width: 100%;
-    border: 2px solid #b1acac;
+    border: 1px solid #cac3c3;
     outline: none;
     font-size: 16px;
+    z-index: 1;
 }
 .IconSearch{
     position: absolute;
@@ -83,8 +87,9 @@ img.logo {
     padding: 12px 20px;
     justify-content:space-between;
     align-items: center;
-    position: none;
     flex-direction:row-reverse;
+    pointer-events: none;
+    z-index: 0;
 }
 img.img {
     height: 24px;
