@@ -1,0 +1,61 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}
+Home Page
+{% endblock %}
+
+
+{% block main %}
+<main>
+    <div class="center-content">
+        <img class="google" src="{% static 'resources/google-logo.png' %}" alt="">
+        
+        <div>
+
+            <span class="material-symbols-outlined" id="search-icon" style="color: lightgray;" style="width: 10%;">
+                search
+                </span>
+            <img src="{% static 'resources/camera.png' %}" alt="" class="camera">
+            <img src="{% static 'resources/mircophone.png' %}"  class="microphone" alt="">
+            <input type="search" name="" id="" class="searchbox">
+        </div>
+        <div class="under-search">
+            <div class="btns">
+                <Button class="btn-search">Google Search</Button>
+                <Button class="btn-search">I'm Feeling Lucky</Button>
+            </div>
+            <div class="under-btns">
+                <h5>Google offered in : <a href="" id="langauge">العربية </a></h5>
+            </div>
+        </div>
+    </div>
+    
+</main>
+
+
+</div>
+<!-- End of the container.. -->
+<footer>
+
+<div class="footer">
+    <div class="footer-country"><h4>Sauid Arabia</h4></div>
+    <div class="line" style="padding: 0px; margin-left: -20px; width: 102%;"><hr color="lightgray" h></div>
+    <div class="flex-footer">
+        <div class="flex-col">
+            <a href="">About</a>
+            <a href="">Advertising</a>
+            <a href="">Business</a>
+            <a href="">How Search works</a>
+        </div>
+        <div class="flex-col">
+            <a href="">Privact</a>
+            <a href="">Terms</a>
+            <a href="">Settings</a>
+
+        </div>
+
+    </div>
+</div>
+</footer>
+{% endblock %}

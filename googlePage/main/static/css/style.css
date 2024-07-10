@@ -1,0 +1,149 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: end;
+    align-items: center;
+}
+.wrraper{
+    padding: 0.8rem 1rem;
+}
+.signin{
+    background-color: #4285F4;
+    border: none;
+    border-radius:0.5rem ;
+    /* padding-top: 1rem; */
+    width: 6rem;
+    height: 2rem;
+    color: white;
+    transition: all 0.9ms ease-in-out ;
+
+}
+.signin:hover{
+    background-color: #1c69e5;
+}
+.center-content{
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    height: 70vh;
+
+}
+.google{
+    width: 17rem;
+}
+.searchbox{
+    
+    border: solid lightgray 1px;
+    border-radius: 2rem;
+    width: 32rem;
+    height: 2.3rem;
+}
+#search-icon{
+        position: absolute;
+        padding:0.4rem 1rem;
+        box-sizing: initial;
+        font-size: 1.5rem;
+    }
+.camera{
+    position: absolute;
+    box-sizing: initial;
+    padding: 0.3rem 30rem;
+    width: 1.6rem;
+}
+.microphone{
+    position: absolute;
+    box-sizing: initial;
+    padding: 0.35rem 28rem;
+    width: 1.55rem;
+}
+.flex-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.flex-col{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.footer{
+    position: sticky;
+    background-color: rgba(216, 216, 216, 0.292);
+    padding: 1rem;
+    margin-top: 4.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    
+    
+    
+}
+.line hr{
+    padding: 0px;
+    margin: 0px;
+    color: #4285F4;
+    width: 100%;
+    height: 0.px
+    
+    
+}
+.flex-col a{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgb(75, 75, 75);
+    letter-spacing: -0.1px;
+}
+.flex-col a{
+    text-decoration: none;
+}
+.footer-country h4{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgb(75, 75, 75);
+    letter-spacing: -0.1px;
+
+}
+
+.under-search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.btn-search{
+    font-size:small ;
+    letter-spacing: -0.1px;
+    font-weight: 400;
+    font-size: 0.8rem;
+    font-stretch: expanded;
+    border: none;
+    border-radius: 0.2rem;
+    width: 7rem;
+    height: 2rem;
+    max-width: 7rem;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.under-btns a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    font-size: 90%;
+}

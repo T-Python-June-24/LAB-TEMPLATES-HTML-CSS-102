@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+    
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%} {% endblock %}</title>
+</head>
+<body>
+    <div class="wrraper">
+        <nav>
+            <h5>Gmail</h5>
+            <h5>Images</h5>
+            <span class="material-symbols-outlined">
+                apps
+                </span>
+            <Button class="signin">Sign in</Button>
+        </nav>
+        {% block main%}
+        {% endblock%}
+    
+</body>
+</html>
