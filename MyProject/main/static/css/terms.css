@@ -1,0 +1,17 @@
+.content {
+    margin: 0 20px 5px 20px;
+    display: flex;
+    flex-direction: column;
+    max-height: fit-content;
+    align-items: center;
+}
+.content img {
+    height: 30rem;
+}
+.terms {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 0 0 4rem ;
+}

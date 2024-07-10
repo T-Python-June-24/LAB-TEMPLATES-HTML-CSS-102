@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <title>Google</title>
+    {% block StyleFile %}{% endblock%}
+    <title>{% block title%} {% endblock%}</title>
 </head>
 <body>
     <div class="wrapper">
@@ -22,38 +23,10 @@
                 <a href="#"><button class="btn">Sign in</button></a>
             </nav>
         </div>
-        <div class="main-content">
-            <div class="logo">
-                <img src="{% static 'images/google-logo.png' %}" alt="Google Logo">
-            </div>
-            <div class="search-bar">
-                <img src="{% static 'images/search.png' %}" alt="">
-                <input type="text" placeholder="Search Google or type a URL">
-                <img src="{% static 'images/mircophone.png' %}" alt="not found">
-                <img src="{% static 'images/camera.png' %}" alt="not found">
-            </div>
-            <div class="buttons">
-                <button>Google Search</button>
-                <button>I'm Feeling Lucky</button>
-            </div>
-            <div class="language">
-                Google offered in: <a href="#">العربية</a>
-            </div>
-        </div>
-        <div class="lang">Saudi Arabia</div>
-        <div class="footer">
-            <div class="left-links">
-                <a href="#">About</a>
-                <a href="#">Advertising</a>
-                <a href="#">Business</a>
-                <a href="#">How Search works</a>
-            </div>
-            <div class="right-links">
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">Settings</a>
-            </div>
-        </div>
+        {% block main %}
+
+        {% endblock %}
+
     </div>
 </body>
 
