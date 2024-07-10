@@ -1,52 +1,67 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="/static/css/style.css" />
 
-    <title>{% block title %}{%  endblock %}</title>
+    <title>{% block title %}{% endblock %}</title>
 </head>
+
 <body>
     <div class="wrapper">
-     <nav>
+        <nav>
 
-    <div class="right-nav">
-        <a href="">images </a>
-        <a href="">Gmail </a>
-        <span class="material-symbols-outlined">apps</span>
-        <button>Sign in </button>
-    </div>
-    </nav><!-- End Nav -->
+            <div class="right-nav">
+                <a href="">images </a>
+                <a href="">Gmail </a>
+                <span class="material-symbols-outlined">apps</span>
+                <button>Sign in </button>
+            </div>
+        </nav><!-- End Nav -->
     </div> <!--End wrapper-->
 
     <main>
 
-         {% block content %}
+        {% block content %}
 
 
-         {% endblock %}
+        {% endblock %}
 
-        </main>
-        <div>
-            <nav>
-            <div class="footer">
-                <div class="footer-content"><a href="#">Saudi Arabia</a></div>
-                <a href="#">About</a>
-                <a href="#">Advertising</a>
-                <a href="#">Business</a>
-                <a href="#">How Search works</a>
+    </main>
+    <div class="footer">
+        <div class="row row1">
+            <p> Saudi Arabia</p>
             </div>
-        </nav>
+            <div class="row row2">
 
-        
-</div>
-</div>
-</div>
+            <div class="div-footer">
+                <div>
+                    <a href="">About</a>
+                    <a href="">Advertising</a>
+                    <a href="">Business</a>
+                    <a href="">How Search works</a>
+                </div>
+                <div>
+                    <a href="">Privacy</a>
+                    <a href="">Terms</a>
+                    <a href="">Settings</a>
+                </div>
+            </div>
+
+
+
+
+
+
+
 
 
 </body>
-</html>    
+
+</html>
