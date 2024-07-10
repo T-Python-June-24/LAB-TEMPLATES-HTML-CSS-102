@@ -1,13 +1,13 @@
 html, body {
-    height: 100%; /* Ensures that the html and body elements take up the full height of the viewport */
-    margin: 0; /* Removes default margin */
+    height: 100%; 
+    margin: 0; 
 }
 
 .wrapper {
-    min-height: 100%; /* Ensures the wrapper takes at least the full height of the viewport */
+    min-height: 100%; 
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Adds space-between to push the footer to the bottom */
+    justify-content: space-between; 
 }
 
 
@@ -17,7 +17,7 @@ html, body {
     align-items: center;
     padding: 0.3rem;
     justify-content: flex-end;
-    width: 100%; /* Ensure the header takes full width */
+    width: 100%; 
     column-gap: 1.3rem;
 }
 
@@ -136,3 +136,16 @@ a {
     display: flex;
     gap: 29px; 
 }
+.terms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 15rem;
+}
+
+.terms-logo {
+    width: 1000px; 
+    height: auto; 
+    transform: translateY(-3cm); 
+}
+
