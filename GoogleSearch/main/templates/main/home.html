@@ -1,11 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>google search</title>
-</head>
-<body>
-    
-</body>
-</html>
+{% extends 'main/base.html'%} {% load static %} {% block title %}Google{%endblock %} 
+
+{% block content%}
+<div class="main-container">
+  <div class="logo">
+    <img
+      width="300"
+      height="100"
+      src="{% static '/images/google-logo.png' %}"
+      alt="Google Logo"
+    />
+  </div>
+  <div class="search-bar">
+    <img
+      width="30"
+      height="30"
+      src="{% static '/images/search-logo.png' %}"
+      alt="Search"
+    />
+    <input type="text" placeholder="  Search Google or type a URL" />
+    <img
+      width="35"
+      height="35"
+      src="{% static '/images/camera.png' %}"
+      alt="Camera"
+    />
+    <img
+      width="35"
+      height="35"
+      src="{% static '/images/mircophone.png' %}"
+      alt="Microphone"
+    />
+  </div>
+  <div class="btn">
+    <button>Google Search</button>
+    <button>I'm Feeling Lucky</button>
+  </div>
+  <div>
+    <p>Google offered in: العربية</p>
+  </div>
+  <div class="footer-1">
+    <span>Saudi Arabia</span>
+  </div>
+  <div class="footer-2">
+    <div>
+      <a
+        href="https://about.google/?utm_source=google-SA&utm_medium=referral&utm_campaign=hp-footer&fg=1"
+        >About</a
+      >
+      <a
+        href="https://ads.google.com/intl/en_sa/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"
+        >Advertising</a
+      >
+      <a
+        href="https://www.google.com.sa/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1"
+        >Business</a
+      >
+      <a href="https://www.google.com/search/howsearchworks/?fg=1"
+        >How Search works</a
+      >
+    </div>
+    <div>
+      <a href="https://policies.google.com/privacy?hl=en-SA&fg=1">Privacy</a>
+      <a href="terms/">Terms</a>
+      <a href="#">Settings</a>
+    </div>
+  </div>
+</div>
+
+{% endblock%}

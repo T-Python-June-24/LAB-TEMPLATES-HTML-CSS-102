@@ -1,6 +1,10 @@
 from django.shortcuts import render
+from django.http import HttpRequest,HttpResponse
 
-def home_view():
-    pass
-def term_view():
-    pass
+def home_view(request: HttpRequest):
+
+    return render(request, "main/home.html")
+
+def terms_view(request: HttpRequest):
+
+    return render(request, "main/terms.html")
