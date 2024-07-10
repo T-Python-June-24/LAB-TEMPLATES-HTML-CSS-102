@@ -5,6 +5,7 @@
     font-weight: lighter;
 }
 nav{
+    
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
@@ -17,7 +18,7 @@ nav{
 .signin{
     background-color: #4285F4;
     border: none;
-    border-radius:0.5rem ;
+    border-radius:0.36rem ;
     /* padding-top: 1rem; */
     width: 6rem;
     height: 2rem;
@@ -50,19 +51,18 @@ nav{
 }
 #search-icon{
         position: absolute;
-        padding:0.4rem 1rem;
-        box-sizing: initial;
-        font-size: 1.5rem;
+        padding:0.6rem 0.8rem;
+        font-size: 1.1rem;
     }
 .camera{
     position: absolute;
-    box-sizing: initial;
+    
     padding: 0.3rem 30rem;
     width: 1.6rem;
 }
 .microphone{
     position: absolute;
-    box-sizing: initial;
+    
     padding: 0.35rem 28rem;
     width: 1.55rem;
 }
@@ -146,4 +146,53 @@ nav{
     color: blue;
     font-weight: bold;
     font-size: 90%;
+}
+.main-content{
+    margin: 0rem 15rem;
+}
+.terms-img{
+    width: 50rem;
+    
+}
+
+.wrraper-term{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    box-sizing: initial;
+    gap: 1.9rem;
+}
+.terms-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    /* padding-left:0 ; */
+    width: 100%;
+    letter-spacing: -0.1px;
+    margin-left: 10rem;
+
+}
+.terms-content h2 , h3 ,h4{
+    font-weight: bold;
+
+}
+.terms-content h2{
+    font-size: 1.5rem;
+}
+
+.terms-content h3{
+    font-size: 1.2rem;
+}
+
+.terms-content h4{
+    font-size: 1rem;
+}
+.terms-content p a , h4 a{
+    text-decoration: none;
+    color: rgb(0, 0, 189);
+}
+.terms-content p{
+    font-size: 0.8rem;
 }
