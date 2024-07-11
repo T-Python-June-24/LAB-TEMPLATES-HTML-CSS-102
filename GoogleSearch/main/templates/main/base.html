@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{% static 'styles/style.css' %}" rel="stylesheet">
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+<div class="wrapper">
+    <nav>
+        <a href="" class="header">Gmail</a>
+        <a href="" class="header">Images</a>
+        <img src="{% static 'images/apps-icon.png' %}" class="icon" alt="Apps icon">
+        <button class="sign-in">Sign in</button>
+    </nav>
+
+    {% block content %}
+
+    {% endblock %}
+
+    <footer>
+        <div class="top-footer">
+            Saudi Arabia
+        </div>
+        <div class="bottom-footer">
+
+            <div>
+                <a href="">About</a>
+                <a href="">Advertising</a>
+                <a href="">Business</a>
+                <a href="">How Search works</a>
+            </div>
+            <div>
+                <a href="">Privacy</a>
+                <a href="{% url 'main:tos_view' %}">Terms</a>
+                <a href="">Settings</a>
+
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
