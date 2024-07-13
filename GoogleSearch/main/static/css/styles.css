@@ -1,0 +1,138 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    color: #1f1f1f;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    column-gap: 1.3rem;
+    padding: .5rem 1rem;
+
+}
+
+nav button {
+    background-color:  #2776de;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #1f1f1f;
+}
+
+a:hover {
+    color: blue;
+}
+
+.img-link {
+    padding-bottom: 0%;
+    width: 35px;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 25px;
+}
+
+.logo {
+    width: 330px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 35px;
+    padding: 10px 20px;
+    column-gap: 5px;
+    width: 650px;
+}
+
+.search-container span {
+    color: #6b6b6b;
+}
+
+.icon {
+    height: 30px;
+}
+
+.search-container input {
+    border: none;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.bott-butt {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.bott-butt button {
+    background-color: #f4f3f3;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: #464646;
+}
+
+.bott-butt button:hover {
+    background-color: #1f80e1;
+    color: white;
+}
+
+.tos-image {
+    width: 700px;
+}
+
+.tos-paragraph {
+    width: 700px;
+    white-space: pre-line;
+}
+
+.top-footer {
+    padding: 18px 26px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.bottom-footer {
+    padding: 18px 26px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #c8c8c8;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-footer > div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+}

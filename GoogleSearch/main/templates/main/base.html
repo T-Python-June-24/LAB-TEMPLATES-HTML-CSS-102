@@ -1,0 +1,52 @@
+{% load static %}
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}GoogleSearch{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <nav>
+        <a href="#">Gmail</a>
+        <a href="#">Images</a>
+        <!-- <a><span class="material-symbols-outlined">apps</span></a> -->
+        <a href="#"><img src="{% static 'images/apps.png' %}" alt="Apps" class="img-link"/></a>
+        <button>Sign in</button>
+    </nav>
+    
+    {% block content %}
+    
+    {% endblock %}
+    
+    <footer>
+        <div class="top-footer">
+            Saudi Arabia
+        </div>
+
+        <div class="bottom-footer">
+            <div>
+                <a href="#">About</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search works</a>
+            </div>        
+            <div>
+                <a href="#">Privacy</a>
+                <a href="{% url 'main:terms' %}">Terms</a>
+                <a href="#">Settings</a>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
+

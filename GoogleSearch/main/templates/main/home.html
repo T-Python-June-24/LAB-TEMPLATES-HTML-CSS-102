@@ -1,0 +1,28 @@
+{% extends 'main/base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% load static %}
+
+
+{% block content %}
+<div class="main-section">
+    <img src="{% static 'images/google-logo.png' %}" alt="Google Logo" class="logo">
+    <div class="search-container">
+        <span class="material-icons icon">search</span>
+        <input type="text" placeholder="Search Google">
+        <!-- <span class="material-icons icon">mic</span> -->
+        <a class="icon"><img src="{% static 'images/mircophone.png' %}" class="icon"/></a>
+        <a class="icon"><img src="{% static 'images/camera.png' %}" class="icon"/></a>
+
+    </div>
+
+    <div class="bott-butt">
+        <button>Google Search</button>
+        <button>I'm Feeling Lucky</button>
+    </div>
+    <div>
+        Google offered in:  <a href="#"> العربية </a>
+    </div>
+</div>
+{% endblock %}
